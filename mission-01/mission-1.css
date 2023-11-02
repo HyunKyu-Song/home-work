@@ -1,0 +1,88 @@
+body {
+   margin: 0;
+   background-color: #F5F5F5;
+}
+
+.ui_1 {
+   width: 502px;
+   height: 310px;
+   background-color: #fff;
+   border: 1px solid #303030;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 70px;
+}
+
+.logo_img {
+   width: 112px;
+   height: 67px;
+   background-color: #fff;
+   float: left;
+   padding-top: 50px;
+   padding-left: 50px;
+}
+
+.honeyTea_img {
+   width: 222px;
+   height: 270px;
+}
+
+.ment {
+   width: 200px;
+   height: 37px;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 150%;
+   text-align: center;
+   color: #4E4E4E;
+}
+
+.btn,
+.btn_buy {
+   cursor: pointer;
+   position: absolute;
+   bottom: 25px;
+   left: 25px;
+   background-color: #cccccc;
+   color: #F3F3F3;
+   border: none;
+   width: 42px;
+   height: 42px;
+}
+
+.btn_buy {
+   display: none;
+   width: 112px;
+   height: 42px;
+   background-color: #0074e9;
+}
+
+.btn_icon {
+   width: 6px;
+   height: 10px;
+}
+
+.ment_buy {
+   width: 52px;
+   height: 17px;
+   font-size: 14px;
+   line-height: 120%;
+   text-align: left;
+   margin-right: 15px;
+}
+
+.show {
+   display: block;
+}
+
+.hide {
+   display: none;
+}

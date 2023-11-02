@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./mission-1.css">
+   <title>mission-1</title>
+</head>
+
+<body>
+   <main>
+      <div class="ui_1">
+         <div class="wrapper">
+            <img src="./images/honeytea_logo.png" alt="오뚜기" class="logo_img">
+            <p class="ment">따뜻한 차 향기</p>
+         </div>
+         <img src="./images/honeytea.png" alt="꿀생강차" class="honeyTea_img">
+         <button class="btn_buy" type="button"><span class="ment_buy">구매하기</span><span
+               class="btn_icon">></span></button>
+         <button class="btn" type="button"><span class="btn_icon">></span></button>
+      </div>
+
+      <div class="ui_2">
+
+      </div>
+
+      <div class="ui_3">
+
+      </div>
+   </main>
+
+   <script>
+      let btn = document.querySelector('.btn');
+      let btn_buy = document.querySelector('.btn_buy');
+
+      btn.addEventListener('click', () => {
+         btn.classList.add('hide');
+         btn_buy.classList.add('show');
+      })
+      btn_buy.addEventListener('click', () => {
+         btn.classList.remove('hide');
+         btn_buy.classList.remove('show');
+      })
+
+   </script>
+</body>
+
+</html>
