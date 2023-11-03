@@ -1,0 +1,175 @@
+body {
+   background-color: #F5F5F5;
+}
+
+
+/* 따뜻한 차 향기 ui_1 */
+.ui_1 {
+   width: 502px;
+   height: 310px;
+   background-color: #fff;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   gap: 24px;
+   position: relative;
+   border: 1px solid #ccc;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 13px;
+}
+
+.honeyTea_logo {
+   width: 112px;
+   height: 67px;
+   margin-left: 73px;
+   margin-top: 75px;
+}
+
+.descrpition_honeyTea {
+   width: 200px;
+   height: 37px;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 36px;
+   text-align: center;
+   color: rgba(78, 78, 78, 1);
+   margin: 0;
+   margin-left: 28px;
+}
+
+.honeyTea_img {
+   width: 222px;
+   height: 270px;
+   margin-top: 20px;
+   margin-right: 28px;
+}
+
+
+
+
+.ui_wrapper {
+   display: flex;
+   justify-content: center;
+   margin-top: 14px;
+   gap: 14px;
+}
+
+
+/* 핸드크림 모음 */
+.ui_2,
+.ui_3 {
+   width: 243px;
+   height: 310px;
+   border: 1px solid #ccc;
+   background-color: #fff;
+   position: relative;
+}
+
+.ui_2 {
+   text-align: center;
+}
+
+.handcream_logo {
+   width: 114px;
+   height: 42px;
+   margin-top: 14px;
+}
+
+.descrpition_handcream {
+   width: 200px;
+   height: 27px;
+   margin: auto;
+   margin-top: 10px;
+   color: rgba(85, 85, 85, 1);
+   text-align: center;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 27px;
+}
+
+.handcream_img {
+   width: 195px;
+   height: 196px;
+   margin-top: 7px;
+}
+
+
+
+/* 고소한 보리차 */
+.tea_logo {
+   width: 114px;
+   height: 42px;
+   position: absolute;
+   top: 14px;
+   left: 64px;
+}
+
+.descrpition_tea {
+   width: 200px;
+   height: 27px;
+   color: rgba(85, 85, 85, 1);
+   text-align: center;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 27px;
+   margin: 0;
+   position: absolute;
+   top: 66px;
+   left: 21px;
+}
+
+.tea_img {
+   width: 195px;
+   height: 196px;
+   position: absolute;
+   top: 100px;
+   left: 23px;
+}
+
+
+
+/* 구매 버튼 */
+.btn,
+.btn_buy {
+   cursor: pointer;
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   background-color: #cccccc;
+   color: #F3F3F3;
+   border: none;
+   width: 42px;
+   height: 42px;
+}
+
+.btn_buy {
+   display: none;
+   width: 112px;
+   height: 42px;
+   background-color: #0074e9;
+}
+
+.btn_icon {
+   width: 6px;
+   height: 10px;
+}
+
+.descrpition_buy {
+   width: 52px;
+   height: 17px;
+   font-size: 14px;
+   line-height: 120%;
+   text-align: left;
+   margin-right: 16px;
+}
+
+.btn:active~.btn_buy {
+   cursor: pointer;
+   display: block;
+}
