@@ -1,0 +1,80 @@
+/* 숨김 콘텐츠 */
+legend {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   clip-path: polygon(0 0, 0 0, 0 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+/* 배경 이미지 */
+.signIn_container {
+   width: 1440px;
+   height: 850px;
+   background-image: url(./images/커피\ 이미지.png);
+}
+
+/* 로그인 타이틀 */
+.signIn_title {
+   width: 98px;
+   height: 36px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 100;
+   line-height: normal;
+   letter-spacing: -0.72px;
+   text-transform: uppercase;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 100px;
+}
+
+/* 영어 멘트 첫 단어만 대문자 */
+[lang="en"] {
+   text-transform: capitalize;
+}
+
+/* 영어 멘트 */
+.sub_ment_en {
+   width: 187px;
+   height: 18px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 18px;
+   font-weight: 300;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.36px;
+   margin: 0;
+   margin-top: 24px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* 한글 멘트 */
+.sub_ment_ko {
+   width: 175px;
+   height: 12px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 12px;
+   font-weight: 100;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.24px;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 9px;
+}
