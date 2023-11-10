@@ -1,0 +1,166 @@
+.signIn_container {
+   width: 1440px;
+   height: 850px;
+   margin: auto;
+   background-image: url(./images/커피\ 이미지.png);
+}
+
+.signIn_title {
+   width: 98px;
+   height: 36px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 100;
+   line-height: normal;
+   letter-spacing: -0.72px;
+   text-transform: uppercase;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 100px;
+}
+
+/* 영어 멘트 첫 단어만 대문자 */
+[lang="en"] {
+   text-transform: capitalize;
+}
+
+/* 영어 멘트 */
+.sub_ment_en {
+   width: 187px;
+   height: 18px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 18px;
+   font-weight: 300;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.36px;
+   margin: 0;
+   margin-top: 24px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* 한글 멘트 */
+.sub_ment_ko {
+   width: 175px;
+   height: 12px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 12px;
+   font-weight: 100;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.24px;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 9px;
+}
+
+/* 폼에 테두리 제거 */
+fieldset {
+   border: none;
+}
+
+/* 숨김 콘텐츠 */
+legend {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   clip-path: polygon(0 0, 0 0, 0 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+.input_container {
+   margin-top: 100px;
+}
+
+.user_email,
+.user_pw {
+   width: 540px;
+   height: 40px;
+   margin: auto;
+}
+
+.user_email input,
+.user_pw input {
+   width: 100%;
+   background-color: initial;
+   color: #FEFEFE;
+   border: none;
+   border-bottom: 1px solid #fefefe80;
+   padding-bottom: 8px;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.36px;
+}
+
+.user_pw {
+   margin-top: 53px;
+}
+
+.email_save {
+   width: 540px;
+   height: 12px;
+   margin: auto;
+   color: #fefefe80;
+}
+
+.btn_container {
+   display: flex;
+   gap: 20px;
+   width: 540px;
+   height: 48px;
+   margin: auto;
+   margin-top: 72px;
+}
+
+.signIn_btn {
+   background-color: #FEFEFE;
+   color: #24388D;
+   border: none;
+}
+
+.signUp_btn {
+   background-color: initial;
+   border: 1px solid #FEFEFE;
+   color: #FEFEFE;
+}
+
+.signIn_btn,
+.signUp_btn {
+   cursor: pointer;
+   position: relative;
+   width: 260px;
+   height: 48px;
+   border-radius: 8px;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-style: normal;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+}
+
+.signIn_btn svg,
+.signUp_btn svg {
+   position: absolute;
+   top: 50%;
+   right: 14px;
+   transform: translateY(-50%);
+}
