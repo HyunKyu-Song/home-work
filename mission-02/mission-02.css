@@ -83,14 +83,22 @@ legend {
    border-width: 0;
 }
 
+form {
+   position: relative;
+}
+
 .input_container {
    margin-top: 100px;
 }
 
 .user_email,
 .user_pw {
+   position: absolute;
    width: 540px;
    height: 40px;
+   top: 100px;
+   left: 0;
+   right: 0;
    margin: auto;
 }
 
@@ -106,28 +114,34 @@ legend {
    font-size: 18px;
    font-style: normal;
    font-weight: 400;
-   line-height: normal;
    letter-spacing: -0.36px;
 }
 
 .user_pw {
-   margin-top: 53px;
+   top: 193px;
 }
 
 .email_save {
+   position: absolute;
    width: 540px;
    height: 12px;
+   top: 247px;
+   left: 0;
+   right: 0;
    margin: auto;
    color: #fefefe80;
 }
 
 .btn_container {
+   position: absolute;
+   top: 319px;
+   left: 0;
+   right: 0;
    display: flex;
    gap: 20px;
    width: 540px;
    height: 48px;
    margin: auto;
-   margin-top: 72px;
 }
 
 .signIn_btn {
