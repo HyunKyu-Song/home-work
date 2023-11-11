@@ -1,0 +1,350 @@
+.signIn_container {
+   width: 1440px;
+   height: 850px;
+   margin: auto;
+   background-image: url(./mission-02/images/커피\ 이미지.png);
+}
+
+.signIn_title {
+   width: 98px;
+   height: 36px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 100;
+   line-height: normal;
+   letter-spacing: -0.72px;
+   text-transform: uppercase;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 100px;
+}
+
+/* 영어 멘트 첫 단어만 대문자 */
+[lang="en"] {
+   text-transform: capitalize;
+}
+
+/* 영어 멘트 */
+.sub_ment_en {
+   width: 187px;
+   height: 18px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 18px;
+   font-weight: 300;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.36px;
+   margin: 0;
+   margin-top: 24px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* 한글 멘트 */
+.sub_ment_ko {
+   width: 175px;
+   height: 12px;
+   color: #FEFEFE;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 12px;
+   font-weight: 100;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: -0.24px;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 9px;
+}
+
+/* 폼에 테두리 제거 */
+fieldset {
+   border: none;
+}
+
+/* 숨김 콘텐츠 */
+legend {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   clip-path: polygon(0 0, 0 0, 0 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+form {
+   position: relative;
+}
+
+.input_container {
+   margin-top: 100px;
+}
+
+.user_email,
+.user_pw {
+   position: absolute;
+   width: 540px;
+   height: 40px;
+   top: 100px;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+
+.user_email input,
+.user_pw input {
+   width: 100%;
+   background-color: initial;
+   color: #FEFEFE;
+   border: none;
+   border-bottom: 1px solid #fefefe80;
+   padding-bottom: 8px;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   letter-spacing: -0.36px;
+}
+
+.email_invalid_ment,
+.pw_invalid_ment {
+   display: none;
+   color: #fefefe80;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.24px;
+   margin-top: 5px;
+}
+
+.email_valid,
+.pw_valid,
+.email_invalid,
+.pw_invalid {
+   display: none;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+}
+
+.user_pw {
+   top: 193px;
+}
+
+.pw_invalid_ment {
+   margin-top: 3px;
+}
+
+.pw_valid,
+.pw_invalid {
+   right: 30px;
+}
+
+.pw_hidden {
+   cursor: pointer;
+   display: none;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   background-color: initial;
+   border: none;
+}
+
+.pw_visible {
+   cursor: pointer;
+   display: none;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   background-color: initial;
+   border: none;
+}
+
+.show {
+   display: block;
+}
+
+.email_save {
+   position: absolute;
+   width: 540px;
+   height: 12px;
+   font-size: 12px;
+   top: 247px;
+   left: 0;
+   right: 0;
+   margin: auto;
+   color: #fefefe80;
+}
+
+.btn_container {
+   position: absolute;
+   top: 319px;
+   left: 0;
+   right: 0;
+   display: flex;
+   gap: 20px;
+   width: 540px;
+   height: 48px;
+   margin: auto;
+}
+
+.signIn_btn {
+   background-color: #FEFEFE;
+   color: #24388D;
+   border: none;
+}
+
+.signUp_btn {
+   background-color: initial;
+   border: 1px solid #FEFEFE;
+   color: #FEFEFE;
+}
+
+.signIn_btn,
+.signUp_btn {
+   cursor: pointer;
+   position: relative;
+   width: 260px;
+   height: 48px;
+   border-radius: 8px;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-style: normal;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+}
+
+.signIn_btn svg,
+.signUp_btn svg {
+   position: absolute;
+   top: 50%;
+   right: 14px;
+   transform: translateY(-50%);
+}
+
+
+
+/* 모바일 화면 */
+@media (max-width : 600px) {
+   .signIn_container {
+      width: 375px;
+      height: 812px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+   }
+
+   .signIn_title {
+      padding-top: 70px;
+   }
+
+   .input_container {
+      margin-top: 114px;
+   }
+
+   .user_email,
+   .user_pw {
+      width: 311px;
+      height: 40px;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: auto;
+   }
+
+   .email_invalid_ment,
+   .pw_invalid_ment {
+      display: none;
+      color: #fefefe80;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.24px;
+      margin-top: 5px;
+   }
+
+   .email_valid,
+   .pw_valid,
+   .email_invalid,
+   .pw_invalid {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+   }
+
+   .user_pw {
+      top: 193px;
+   }
+
+   .pw_invalid_ment {
+      margin-top: 3px;
+   }
+
+   .pw_valid,
+   .pw_invalid {
+      right: 30px;
+   }
+
+   .pw_hidden {
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: initial;
+      border: none;
+   }
+
+   .pw_visible {
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: initial;
+      border: none;
+   }
+
+   .show {
+      display: block;
+   }
+
+   .email_save {
+      width: 311px;
+   }
+
+   .btn_container {
+      flex-flow: column nowrap;
+      gap: 15px;
+      width: 311px;
+      height: auto;
+      margin: auto;
+   }
+
+   .signIn_btn,
+   .signUp_btn {
+      width: 100%;
+   }
+}
