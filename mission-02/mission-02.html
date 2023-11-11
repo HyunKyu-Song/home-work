@@ -23,6 +23,7 @@
                <div class="user_email">
                   <label for="user_email" class="user_email_label"></label>
                   <input type="email" id="user_email" placeholder="이메일" required>
+                  <p class="email_invalid_ment">이메일 입력 방법이 잘못되었습니다. (예: user@domain.com)</p>
                   <svg class="email_valid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                      fill="none">
                      <g clip-path="url(#clip0_6334_2974)">
@@ -36,11 +37,25 @@
                         </clipPath>
                      </defs>
                   </svg>
+                  <svg class="email_invalid" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     viewBox="0 0 16 16" fill="none">
+                     <g clip-path="url(#clip0_6341_2993)">
+                        <path
+                           d="M0.444458 14.2222H15.5556L8.00001 1.33334L0.444458 14.2222ZM8.44446 12H7.55557V11.1111H8.44446V12ZM8.44446 9.77779H7.55557V6.66668H8.44446V9.77779Z"
+                           fill="#FEFEFE" />
+                     </g>
+                     <defs>
+                        <clipPath id="clip0_6341_2993">
+                           <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                     </defs>
+                  </svg>
                </div>
 
                <div class="user_pw">
                   <label for="user_pw" class="user_email_pw"></label>
                   <input type="password" id="user_pw" placeholder="패스워드" required>
+                  <p class="pw_invalid_ment">패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</p>
                   <svg class="pw_valid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                      fill="none">
                      <g clip-path="url(#clip0_6334_2974)">
@@ -54,7 +69,20 @@
                         </clipPath>
                      </defs>
                   </svg>
-                  <button class="pw_hidden">
+                  <svg class="pw_invalid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                     fill="none">
+                     <g clip-path="url(#clip0_6341_2993)">
+                        <path
+                           d="M0.444458 14.2222H15.5556L8.00001 1.33334L0.444458 14.2222ZM8.44446 12H7.55557V11.1111H8.44446V12ZM8.44446 9.77779H7.55557V6.66668H8.44446V9.77779Z"
+                           fill="#FEFEFE" />
+                     </g>
+                     <defs>
+                        <clipPath id="clip0_6341_2993">
+                           <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                     </defs>
+                  </svg>
+                  <button class="pw_hidden" type="button">
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <g clip-path="url(#clip0_6334_2968)">
                            <path
@@ -63,6 +91,20 @@
                         </g>
                         <defs>
                            <clipPath id="clip0_6334_2968">
+                              <rect width="16" height="16" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </button>
+                  <button class="pw_visible" type="button">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_6345_3000)">
+                           <path
+                              d="M8.00002 4.66667C9.84002 4.66667 11.3334 6.16 11.3334 8C11.3334 8.43 11.2467 8.84 11.0967 9.21667L13.0467 11.1667C14.0534 10.3267 14.8467 9.24 15.3367 8C14.18 5.07333 11.3367 3 8.00002 3C7.06669 3 6.17335 3.16667 5.34335 3.46667L6.78335 4.90333C7.16002 4.75667 7.57002 4.66667 8.00002 4.66667V4.66667ZM1.33335 2.85L2.85335 4.37L3.15669 4.67333C2.05669 5.53333 1.18669 6.67667 0.666687 8C1.82002 10.9267 4.66669 13 8.00002 13C9.03335 13 10.02 12.8 10.9234 12.4367L11.2067 12.72L13.15 14.6667L14 13.82L2.18335 2L1.33335 2.85ZM5.02002 6.53333L6.05002 7.56333C6.02002 7.70667 6.00002 7.85 6.00002 8C6.00002 9.10333 6.89669 10 8.00002 10C8.15002 10 8.29335 9.98 8.43335 9.95L9.46335 10.98C9.02002 11.2 8.52669 11.3333 8.00002 11.3333C6.16002 11.3333 4.66669 9.84 4.66669 8C4.66669 7.47333 4.80002 6.98 5.02002 6.53333ZM7.89002 6.01L9.99002 8.11L10 8C10 6.89667 9.10335 6 8.00002 6L7.89002 6.01Z"
+                              fill="#FEFEFE" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_6345_3000">
                               <rect width="16" height="16" fill="white" />
                            </clipPath>
                         </defs>
@@ -78,7 +120,7 @@
             </div>
 
             <div class="btn_container">
-               <button class="signIn_btn" type="submit">로그인
+               <button class="signIn_btn" type="button">로그인
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <g id="&#236;&#149;&#132;&#236;&#157;&#180;&#236;&#189;&#152; / &#237;&#153;&#148;&#236;&#130;&#180;&#237;&#145;&#156;"
                         clip-path="url(#clip0_6314_3605)">
@@ -116,16 +158,24 @@
 
    <script>
       let user_email = document.querySelector('#user_email');
-      let user_pw = document.querySelector('#user_pw');
-      let check = document.querySelector('#check');
-      let pw_hidden = document.querySelector('.pw_hidden');
+      let email_invalid_ment = document.querySelector('.email_invalid_ment');
       let email_valid = document.querySelector('.email_valid');
+      let email_invalid = document.querySelector('.email_invalid');
+
+
+      let user_pw = document.querySelector('#user_pw');
+      let pw_invalid_ment = document.querySelector('.pw_invalid_ment');
       let pw_valid = document.querySelector('.pw_valid');
+      let pw_invalid = document.querySelector('.pw_invalid');
+      let pw_visible = document.querySelector('.pw_visible');
+      let pw_hidden = document.querySelector('.pw_hidden');
+
+      let check = document.querySelector('#check');
 
 
       // 이메일 관련
       user_email.addEventListener('focus', () => {
-         user_email.placeholder = `yamoo9@euid.dev`;
+         user_email.placeholder = `yamoo9@euid.com`;
          user_pw.placeholder = '패스워드';
       })
 
@@ -134,8 +184,18 @@
 
          if (regexr.exec(e.target.value)) {
             email_valid.classList.add('show');
+            email_invalid_ment.classList.remove('show');
+            email_invalid.classList.remove('show');
          } else {
             email_valid.classList.remove('show');
+            if (e.target.value) {
+               email_invalid.classList.add('show');
+               email_invalid_ment.classList.add('show');
+            }
+            else {
+               email_invalid_ment.classList.remove('show');
+               email_invalid.classList.remove('show');
+            }
          }
       })
 
@@ -151,20 +211,54 @@
       user_pw.addEventListener('keyup', function (e) {
          if (e.target.value.length > 5) {
             pw_valid.classList.add('show');
-            console.log(111)
+            pw_invalid_ment.classList.remove('show');
+            pw_invalid.classList.remove('show');
          } else {
             pw_valid.classList.remove('show');
+            if (e.target.value) {
+               pw_invalid.classList.add('show');
+               pw_invalid_ment.classList.add('show');
+            }
+            else {
+               pw_invalid_ment.classList.remove('show');
+               pw_invalid.classList.remove('show');
+            }
          }
       })
 
       let cnt = 0;
       pw_hidden.addEventListener('click', () => {
-         if (cnt % 2 === 0)
+         if (cnt % 2 === 0) {
             user_pw.type = 'text';
-         else
+            pw_visible.classList.add('show');
+            console.log('if cnt: ', cnt);
+         }
+         else {
             user_pw.type = 'password';
+            pw_visible.classList.remove('show');
+            pw_hidden.classList.remove('show');
+            console.log('else cnt: ', cnt);
+         }
          cnt++;
       })
+
+      let cnt2 = 0
+      pw_visible.addEventListener('click', () => {
+         if (cnt % 2 === 0) {
+            user_pw.type = 'text';
+            pw_hidden.classList.add('show');
+            console.log('if cnt2: ', cnt2);
+         }
+         else {
+            user_pw.type = 'password';
+            pw_visible.classList.remove('show');
+            pw_hidden.classList.add('show');
+            console.log('else cnt2: ', cnt2);
+         }
+         cnt2++;
+      })
+
+
 
 
 
@@ -174,13 +268,6 @@
       })
 
 
-      user_pw.addEventListener('keydown', () => {
-         if (user_pw.value) {
-            pw_hidden.classList.add('show');
-         } else {
-            pw_hidden.classList.remove('show');
-         }
-      })
 
 
 

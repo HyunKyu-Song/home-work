@@ -117,7 +117,23 @@ form {
    letter-spacing: -0.36px;
 }
 
-.email_valid {
+.email_invalid_ment,
+.pw_invalid_ment {
+   display: none;
+   color: #fefefe80;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.24px;
+   margin-top: 5px;
+}
+
+.email_valid,
+.pw_valid,
+.email_invalid,
+.pw_invalid {
    display: none;
    position: absolute;
    top: 50%;
@@ -129,15 +145,27 @@ form {
    top: 193px;
 }
 
-.pw_valid {
-   display: none;
-   position: absolute;
-   top: 50%;
+.pw_invalid_ment {
+   margin-top: 3px;
+}
+
+.pw_valid,
+.pw_invalid {
    right: 30px;
-   transform: translateY(-50%);
 }
 
 .pw_hidden {
+   cursor: pointer;
+   display: none;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   background-color: initial;
+   border: none;
+}
+
+.pw_visible {
    cursor: pointer;
    display: none;
    position: absolute;
