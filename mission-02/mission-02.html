@@ -23,11 +23,51 @@
                <div class="user_email">
                   <label for="user_email" class="user_email_label"></label>
                   <input type="email" id="user_email" placeholder="이메일" required>
+                  <svg class="email_valid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                     fill="none">
+                     <g clip-path="url(#clip0_6334_2974)">
+                        <path
+                           d="M7.99998 1.33334C4.31998 1.33334 1.33331 4.32001 1.33331 8.00001C1.33331 11.68 4.31998 14.6667 7.99998 14.6667C11.68 14.6667 14.6666 11.68 14.6666 8.00001C14.6666 4.32001 11.68 1.33334 7.99998 1.33334ZM6.66665 11.3333L3.33331 8.00001L4.27331 7.06001L6.66665 9.44668L11.7266 4.38668L12.6666 5.33334L6.66665 11.3333Z"
+                           fill="#FEFEFE" />
+                     </g>
+                     <defs>
+                        <clipPath id="clip0_6334_2974">
+                           <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                     </defs>
+                  </svg>
                </div>
 
                <div class="user_pw">
                   <label for="user_pw" class="user_email_pw"></label>
                   <input type="password" id="user_pw" placeholder="패스워드" required>
+                  <svg class="pw_valid" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                     fill="none">
+                     <g clip-path="url(#clip0_6334_2974)">
+                        <path
+                           d="M7.99998 1.33334C4.31998 1.33334 1.33331 4.32001 1.33331 8.00001C1.33331 11.68 4.31998 14.6667 7.99998 14.6667C11.68 14.6667 14.6666 11.68 14.6666 8.00001C14.6666 4.32001 11.68 1.33334 7.99998 1.33334ZM6.66665 11.3333L3.33331 8.00001L4.27331 7.06001L6.66665 9.44668L11.7266 4.38668L12.6666 5.33334L6.66665 11.3333Z"
+                           fill="#FEFEFE" />
+                     </g>
+                     <defs>
+                        <clipPath id="clip0_6334_2974">
+                           <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                     </defs>
+                  </svg>
+                  <button class="pw_hidden">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_6334_2968)">
+                           <path
+                              d="M8.00002 3C4.66669 3 1.82002 5.07333 0.666687 8C1.82002 10.9267 4.66669 13 8.00002 13C11.3334 13 14.18 10.9267 15.3334 8C14.18 5.07333 11.3334 3 8.00002 3ZM8.00002 11.3333C6.16002 11.3333 4.66669 9.84 4.66669 8C4.66669 6.16 6.16002 4.66667 8.00002 4.66667C9.84002 4.66667 11.3334 6.16 11.3334 8C11.3334 9.84 9.84002 11.3333 8.00002 11.3333ZM8.00002 6C6.89335 6 6.00002 6.89333 6.00002 8C6.00002 9.10667 6.89335 10 8.00002 10C9.10669 10 10 9.10667 10 8C10 6.89333 9.10669 6 8.00002 6Z"
+                              fill="#FEFEFE" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_6334_2968">
+                              <rect width="16" height="16" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </button>
                </div>
 
                <div class="email_save">
@@ -75,29 +115,74 @@
    </section>
 
    <script>
-      document.querySelector('#user_email').addEventListener('focus', () => {
-         document.querySelector('#user_email').placeholder = `yamoo9@euid.dev`;
-         document.querySelector('#user_email').style.fontSize = '16px';
-         // document.querySelector('.user_email_label').innerHTML = '이메일';
-         // document.querySelector('.user_email_label').style.color = '#FEFEFE';
-         document.querySelector('#user_pw').placeholder = '패스워드';
+      let user_email = document.querySelector('#user_email');
+      let user_pw = document.querySelector('#user_pw');
+      let check = document.querySelector('#check');
+      let pw_hidden = document.querySelector('.pw_hidden');
+      let email_valid = document.querySelector('.email_valid');
+      let pw_valid = document.querySelector('.pw_valid');
+
+
+      // 이메일 관련
+      user_email.addEventListener('focus', () => {
+         user_email.placeholder = `yamoo9@euid.dev`;
+         user_pw.placeholder = '패스워드';
       })
 
-      document.querySelector('#user_pw').addEventListener('focus', () => {
-         document.querySelector('#user_pw').placeholder = '숫자, 영어 조합 6자 이상';
-         document.querySelector('#user_pw').style.fontSize = '14px';
-         // document.querySelector('.user_email_label').innerHTML = '';
-         // document.querySelector('.user_email_pw').innerHTML = '패스워드';
-         // document.querySelector('.user_email_pw').style.color = '#FEFEFE';
-         document.querySelector('#user_email').style.fontSize = '18px';
-         document.querySelector('#user_email').placeholder = '이메일';
+      user_email.addEventListener('keyup', function (e) {
+         const regexr = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+
+         if (regexr.exec(e.target.value)) {
+            email_valid.classList.add('show');
+         } else {
+            email_valid.classList.remove('show');
+         }
       })
 
-      document.querySelector('#check').addEventListener('focus', () => {
-         // document.querySelector('.user_email_pw').innerHTML = '';
-         document.querySelector('#user_pw').style.fontSize = '18px';
-         document.querySelector('#user_email').placeholder = '이메일';
-         document.querySelector('#user_pw').placeholder = '패스워드';
+
+
+      // 패스워드 관련
+      user_pw.addEventListener('focus', () => {
+         user_pw.placeholder = '숫자, 영어 조합 6자 이상';
+         pw_hidden.classList.add('show');
+         user_email.placeholder = '이메일';
       })
+
+      user_pw.addEventListener('keyup', function (e) {
+         if (e.target.value.length > 5) {
+            pw_valid.classList.add('show');
+            console.log(111)
+         } else {
+            pw_valid.classList.remove('show');
+         }
+      })
+
+      let cnt = 0;
+      pw_hidden.addEventListener('click', () => {
+         if (cnt % 2 === 0)
+            user_pw.type = 'text';
+         else
+            user_pw.type = 'password';
+         cnt++;
+      })
+
+
+
+      check.addEventListener('focus', () => {
+         user_email.placeholder = '이메일';
+         user_pw.placeholder = '패스워드';
+      })
+
+
+      user_pw.addEventListener('keydown', () => {
+         if (user_pw.value) {
+            pw_hidden.classList.add('show');
+         } else {
+            pw_hidden.classList.remove('show');
+         }
+      })
+
+
+
    </script>
 </body>
