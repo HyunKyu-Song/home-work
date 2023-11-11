@@ -184,6 +184,7 @@ form {
    position: absolute;
    width: 540px;
    height: 12px;
+   font-size: 12px;
    top: 247px;
    left: 0;
    right: 0;
@@ -236,4 +237,114 @@ form {
    top: 50%;
    right: 14px;
    transform: translateY(-50%);
+}
+
+
+
+/* 모바일 화면 */
+@media (max-width : 600px) {
+   .signIn_container {
+      width: 375px;
+      height: 812px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+   }
+
+   .signIn_title {
+      padding-top: 70px;
+   }
+
+   .input_container {
+      margin-top: 114px;
+   }
+
+   .user_email,
+   .user_pw {
+      width: 311px;
+      height: 40px;
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: auto;
+   }
+
+   .email_invalid_ment,
+   .pw_invalid_ment {
+      display: none;
+      color: #fefefe80;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.24px;
+      margin-top: 5px;
+   }
+
+   .email_valid,
+   .pw_valid,
+   .email_invalid,
+   .pw_invalid {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+   }
+
+   .user_pw {
+      top: 193px;
+   }
+
+   .pw_invalid_ment {
+      margin-top: 3px;
+   }
+
+   .pw_valid,
+   .pw_invalid {
+      right: 30px;
+   }
+
+   .pw_hidden {
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: initial;
+      border: none;
+   }
+
+   .pw_visible {
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: initial;
+      border: none;
+   }
+
+   .show {
+      display: block;
+   }
+
+   .email_save {
+      width: 311px;
+   }
+
+   .btn_container {
+      flex-flow: column nowrap;
+      gap: 15px;
+      width: 311px;
+      height: auto;
+      margin: auto;
+   }
+
+   .signIn_btn,
+   .signUp_btn {
+      width: 100%;
+   }
 }

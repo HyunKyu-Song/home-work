@@ -162,7 +162,6 @@
       let email_valid = document.querySelector('.email_valid');
       let email_invalid = document.querySelector('.email_invalid');
 
-
       let user_pw = document.querySelector('#user_pw');
       let pw_invalid_ment = document.querySelector('.pw_invalid_ment');
       let pw_valid = document.querySelector('.pw_valid');
@@ -171,6 +170,7 @@
       let pw_hidden = document.querySelector('.pw_hidden');
 
       let check = document.querySelector('#check');
+
 
 
       // 이메일 관련
@@ -231,13 +231,11 @@
          if (cnt % 2 === 0) {
             user_pw.type = 'text';
             pw_visible.classList.add('show');
-            console.log('if cnt: ', cnt);
          }
          else {
             user_pw.type = 'password';
             pw_visible.classList.remove('show');
             pw_hidden.classList.remove('show');
-            console.log('else cnt: ', cnt);
          }
          cnt++;
       })
@@ -247,29 +245,21 @@
          if (cnt % 2 === 0) {
             user_pw.type = 'text';
             pw_hidden.classList.add('show');
-            console.log('if cnt2: ', cnt2);
          }
          else {
             user_pw.type = 'password';
             pw_visible.classList.remove('show');
             pw_hidden.classList.add('show');
-            console.log('else cnt2: ', cnt2);
          }
          cnt2++;
       })
 
 
-
-
-
+      // 이메일, 패스워드 미입력시 다시 placehold 보이게 하기
       check.addEventListener('focus', () => {
          user_email.placeholder = '이메일';
          user_pw.placeholder = '패스워드';
       })
-
-
-
-
 
    </script>
 </body>
