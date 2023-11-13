@@ -180,6 +180,12 @@ form {
    display: block;
 }
 
+.email_save input,
+.email_save label {
+   cursor: pointer;
+   user-select: none;
+}
+
 .email_save {
    position: absolute;
    width: 540px;
@@ -211,9 +217,10 @@ form {
 }
 
 .signUp_btn {
+   /* text-align: center; */
    background-color: initial;
    border: 1px solid #FEFEFE;
-   color: #FEFEFE;
+   /* color: #FEFEFE; */
 }
 
 .signIn_btn,
@@ -229,6 +236,15 @@ form {
    font-weight: 500;
    line-height: 28px;
    letter-spacing: -0.4px;
+}
+
+.signUp_btn a {
+   display: block;
+   text-decoration: none;
+   color: #FEFEFE;
+   text-align: center;
+   line-height: 48px;
+   /* margin: 40px; */
 }
 
 .signIn_btn svg,
