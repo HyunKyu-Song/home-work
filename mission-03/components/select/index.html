@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>셀렉트 컴포넌트</title>
+   <!-- 상대경로로 components.css 연결 -->
+   <link rel="stylesheet" href="./../../styles/components.css">
+</head>
+
+<body>
+   <div class="selct_container">
+      <div class="select select_normal">
+         <select name="lang" id="select_lang">
+            <option value="ko">한국어</option>
+            <option value="en" lang="en-US">English</option>
+         </select>
+      </div>
+
+   </div>
+
+   <script>
+      document.querySelector('#select_lang').addEventListener('change', function (e) {
+         console.log(e.target.value);
+      })
+      // console.log(document.querySelector('select').value);
+   </script>
+</body>
+
+</html>
