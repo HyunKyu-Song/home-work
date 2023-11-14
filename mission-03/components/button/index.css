@@ -1,0 +1,32 @@
+.btn_container {
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 20px;
+}
+
+.btn {
+   width: 70px;
+   height: 40px;
+   background: #E50914;
+   color: #FFF;
+   border: none;
+   border-radius: 4px;
+   text-align: center;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5rem;
+   letter-spacing: -0.008px;
+}
+
+.btn_hover {
+   background: #B70710;
+}
+
+.btn_focus {
+   border: 3px solid #58E590;
+}
+
+.btn_disabled {
+   background: #757575;
+}
