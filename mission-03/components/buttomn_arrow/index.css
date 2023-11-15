@@ -17,18 +17,17 @@
    line-height: 26px;
 }
 
-.btn_arrow_hover_left,
-.btn_arrow_hover_right {
+.btn_arrow:hover {
    background: #B70710;
 }
 
-.btn_arrow_focus_left,
-.btn_arrow_focus_right {
+.btn_arrow:focus {
    border: 3px solid #58E590;
    background: #B70710;
+   outline: 0;
 }
 
-.btn_arrow_disabled_left,
-.btn_arrow_disabled_right {
+.btn_arrow.btn_arrow_disabled_left,
+.btn_arrow.btn_arrow_disabled_right {
    background: #757575;
 }
