@@ -1,0 +1,58 @@
+.input_email_container {
+   margin: 10px;
+   position: relative;
+}
+
+.user_email_label {
+   position: absolute;
+   top: 20px;
+   left: 18px;
+   color: #757575;
+   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+   transition: all 0.3s ease-in-out;
+}
+
+.user_email_focus {
+   top: 10px;
+   left: 19px;
+   color: #E50914;
+   font-size: 12px;
+   line-height: 18px;
+   font-weight: bold;
+   letter-spacing: -0.006px;
+}
+
+.user_email {
+   box-sizing: border-box;
+   width: 540px;
+   height: 60px;
+   padding: 26px 20px 10px;
+   float: left;
+}
+
+.user_email_invalid {
+   /* display: block; */
+   display: none;
+   border-top: 3px solid #E50914;
+   position: absolute;
+   color: #E50914;
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 21px;
+   letter-spacing: -0.007px;
+   width: 540px;
+   top: 57px;
+   padding-top: 5px;
+   padding-left: 20px;
+}
+
+.show {
+   display: block;
+}
+
+.input_email_container .btn_arrow {
+   width: 210px;
+   height: 60px;
+   float: left;
+   border-radius: none;
+}
