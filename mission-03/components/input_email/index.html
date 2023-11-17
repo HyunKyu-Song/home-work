@@ -11,10 +11,10 @@
 
 <body>
    <div style="background-color: #000; padding: 30px;">
-      <div class="input_email_container">
+      <div role="none" class="input_email_container">
          <label for="user_email" class="user_email_label">이메일 주소</label>
-         <span class="user_email_invalid">정확한 이메일 주소를 입력하세요.</span>
-         <div class="input_email_wrapper">
+         <span role="alert" class="user_email_invalid">정확한 이메일 주소를 입력하세요.</span>
+         <div role="none" class="input_email_wrapper">
             <input type="email" class="user_email" id="user_email" data-val="focus">
             <button class="btn_arrow btn_arrow_normal_right" type="button">30일 무료 이용
                <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">

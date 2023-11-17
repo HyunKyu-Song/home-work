@@ -11,41 +11,47 @@
 </head>
 
 <body>
-   <div class="template_container">
+   <div role="none" class="template_container">
       <header class="header">
-         <div class="header_inner">
+         <div role="none" class="header_inner">
             <a href="/" class="logo"></a>
-
-            <div class="header_button_wrapper">
+            <div role="none" class="header_button_wrapper">
                <button class="select_btn" data-val="onOff">
-                  <span class="global_icon" data-val="onOff"></span>
-                  <span class="state_lang" data-val="onOff">한국어</span>
-                  <span class="select_down_icon" data-val="onOff"></span>
+
+                  <ul>
+                     <li aria-hidden class="global_icon" data-val="onOff"></li>
+                     <li class="state_lang" data-val="onOff">한국어</li>
+                     <li aria-hidden class="select_down_icon" data-val="onOff"></li>
+                  </ul>
+
                   <div class="select_lang hide_none">
                      <div class="check_icon_wrapper">
+                        <!-- span태그로 충분한가? -->
                         <span class="check_icon ko"></span>
                         <span class="check_icon en hide_hidden"></span>
                      </div>
-                     <div class="lang">
-                        <span class="lang_ko">한국어</span>
-                        <span class="lang_en">English</span>
+
+                     <div role="list" class="lang">
+                        <span role="listitem" class="lang_ko">한국어</span>
+                        <span role="listitem" class="lang_en" lang="en-US">English</span>
                      </div>
                   </div>
+
                </button>
                <button class="btn" type="button">로그인</button>
             </div>
          </div>
-
       </header>
+
       <main class="main">
-         <div class="promotion_container">
-            <p>영화, TV 프로그램을 무제한으로.</p>
-            <p>다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</p>
-            <p>시청할 준비가 되셨나요 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
-            <div class="input_email_container">
+         <ul class="promotion_container">
+            <li>영화, TV 프로그램을 무제한으로.</li>
+            <li>다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</li>
+            <li>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</li>
+            <div role="none" class="input_email_container">
                <label for="user_email" class="user_email_label">이메일 주소</label>
-               <span class="user_email_invalid">정확한 이메일 주소를 입력하세요.</span>
-               <div class="input_email_wrapper">
+               <span role="alert" class="user_email_invalid">정확한 이메일 주소를 입력하세요.</span>
+               <div role="none" class="input_email_wrapper">
                   <input type="email" class="user_email" id="user_email" data-val="focus">
                   <button class="btn_arrow btn_arrow_normal_right" type="button">30일 무료 이용
                      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,13 +62,16 @@
                   </button>
                </div>
             </div>
-            <p>신규 회원만 이 프로모션을 이용하실 수 있습니다.</p>
-         </div>
+            <li>신규 회원만 이 프로모션을 이용하실 수 있습니다.</li>
+         </ul>
       </main>
+
       <div role="none" class="divider"></div>
+
       <footer class="footer">
 
-         <div class="footer_ask_wrapper">
+         <div role="none" class="footer_ask_wrapper">
+            <!-- div가 아닌 다른 태그가 있을까? -->
             <div class="footer_ask">질문이 있으신가요&#63;</div>
             <div class="footer_ask">문의 전화&#58; <a href="tel: +82-0-308-321-0058">00-308-321-0058</a></div>
          </div>
@@ -87,25 +96,29 @@
 
          <button class="select_btn" data-val="onOff">
 
-            <span class="global_icon" data-val="onOff"></span>
-            <span class="state_lang" data-val="onOff">한국어</span>
-            <span class="select_down_icon" data-val="onOff"></span>
+            <ul>
+               <li aria-hidden class="global_icon" data-val="onOff"></li>
+               <li class="state_lang" data-val="onOff">한국어</li>
+               <li aria-hidden class="select_down_icon" data-val="onOff"></li>
+            </ul>
 
             <div class="select_lang hide_none">
                <div class="check_icon_wrapper">
+                  <!-- span태그로 충분한가? -->
                   <span class="check_icon ko"></span>
                   <span class="check_icon en hide_hidden"></span>
                </div>
 
-               <div class="lang">
-                  <span class="lang_ko">한국어</span>
-                  <span class="lang_en">English</span>
+               <div role="list" class="lang">
+                  <span role="listitem" class="lang_ko">한국어</span>
+                  <span role="listitem" class="lang_en" lang="en-US">English</span>
                </div>
             </div>
 
          </button>
 
          <address class="footer_address">
+            <!-- address 안에 태그들을 div로 작성해도 되는가? -->
             <div>Netflix 대한민국</div>
             <div>넷플릭스서비시스코리아 유한회사</div>
             <div>통신판매업신고번호: 제2018-서울종로-0426호</div>

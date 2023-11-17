@@ -13,7 +13,8 @@
    <div style="background-color: #000; padding: 50px;">
       <footer class="footer">
 
-         <div class="footer_ask_wrapper">
+         <div role="none" class="footer_ask_wrapper">
+            <!-- div가 아닌 다른 태그가 있을까? -->
             <div class="footer_ask">질문이 있으신가요&#63;</div>
             <div class="footer_ask">문의 전화&#58; <a href="tel: +82-0-308-321-0058">00-308-321-0058</a></div>
          </div>
@@ -38,25 +39,29 @@
 
          <button class="select_btn" data-val="onOff">
 
-            <span class="global_icon" data-val="onOff"></span>
-            <span class="state_lang" data-val="onOff">한국어</span>
-            <span class="select_down_icon" data-val="onOff"></span>
+            <ul>
+               <li aria-hidden class="global_icon" data-val="onOff"></li>
+               <li class="state_lang" data-val="onOff">한국어</li>
+               <li aria-hidden class="select_down_icon" data-val="onOff"></li>
+            </ul>
 
             <div class="select_lang hide_none">
                <div class="check_icon_wrapper">
+                  <!-- span태그로 충분한가? -->
                   <span class="check_icon ko"></span>
                   <span class="check_icon en hide_hidden"></span>
                </div>
 
-               <div class="lang">
-                  <span class="lang_ko">한국어</span>
-                  <span class="lang_en">English</span>
+               <div role="list" class="lang">
+                  <span role="listitem" class="lang_ko">한국어</span>
+                  <span role="listitem" class="lang_en" lang="en-US">English</span>
                </div>
             </div>
 
          </button>
 
          <address class="footer_address">
+            <!-- address 안에 태그들을 div로 작성해도 되는가? -->
             <div>Netflix 대한민국</div>
             <div>넷플릭스서비시스코리아 유한회사</div>
             <div>통신판매업신고번호: 제2018-서울종로-0426호</div>
