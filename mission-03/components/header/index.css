@@ -18,11 +18,12 @@ body {
 }
 
 .logo {
+   display: inline-block;
    background-image: url('./../../images/Logo.svg');
    background-repeat: no-repeat;
    background-size: contain;
    width: 140px;
-   height: 22px;
+   height: 38px;
 }
 
 .header_button_wrapper {
