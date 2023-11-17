@@ -19,7 +19,7 @@ body {
 
 .logo {
    display: inline-block;
-   background-image: url('./../../images/Logo.svg');
+   background-image: url('./../images/Logo.svg');
    background-repeat: no-repeat;
    background-size: contain;
    width: 140px;
