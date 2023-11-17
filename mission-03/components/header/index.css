@@ -45,11 +45,11 @@ body {
       column-gap: 16px;
    }
 
-   .select_btn {
+   .header .select_btn {
       height: 30px;
    }
 
-   .btn {
+   .header .btn {
       width: 60px;
       height: 30px;
    }
