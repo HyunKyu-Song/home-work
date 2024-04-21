@@ -846,5 +846,4 @@ ul {
 ![](https://velog.velcdn.com/images/thdgusrbek/post/59b2d1cd-50b7-42f4-8f7e-8e4360a8103f/image.png)
 <hr><br><br>
 
-### 결과물 페이지
-https://hyunkyu-song.github.io/home-work/
+### [💻 Demo](https://song0331.github.io/home-work/)
